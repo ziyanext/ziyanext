@@ -9,12 +9,17 @@ import productRoutes from "./routes/productRoutes.js";
 import mailRoute from "./routes/mailRoute.js";
 import cors from "cors";
 import path from "path";
+import {fileURLToPath} from "path";
+
 
 //configure env
 dotenv.config();
 
 //databse config
 connectDB();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 //rest object
 const app = express();
