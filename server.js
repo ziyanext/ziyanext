@@ -9,7 +9,7 @@ import productRoutes from "./routes/productRoutes.js";
 import mailRoute from "./routes/mailRoute.js";
 import cors from "cors";
 import path from "path";
-import {fileURLToPath} from "path";
+import {fileURLToPath} from "url";
 
 
 //configure env
